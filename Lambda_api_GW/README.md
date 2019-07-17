@@ -53,8 +53,12 @@ When the terraform apply is finished, you should see output similar to the follo
 
 Load the URL given in the output from your run in your favorite web browser. If everything has worked, you will see the text "Hello world!". This message is being returned from the Lambda function code uploaded earlier, via the API Gateway endpoint.
 
-The API gateway itself can be reviewed by using the AWS console and reviewing the API Gateway screen.
+The API gateway can be reviewed by using the AWS console and reviewing the API Gateway screen.
     https://console.aws.amazon.com/apigateway/home?region=us-east-1
+
+And, look at the Lambda function  from the AWS lambda console
+    https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/ServerlessExample?tab=graph
+    
 
 A modified version can be created by following the above steps after changing the original main.js file with another greeting and running the terraform apply with the new version number;
     
