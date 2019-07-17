@@ -67,6 +67,6 @@ A modified version can be created by following the above steps after changing th
 
 To delete the environment when finished;
 
-    terraform destroy
+    terraform destroy -var="app_version=1.0.0"
 
 NOTE: This will not delete the s3 bucket as it is created outside of the terraform scripts and must be deleted manually.
