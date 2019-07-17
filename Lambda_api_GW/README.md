@@ -10,6 +10,7 @@ The Terraform scripts will build the following AWS resources:
 * API Gateway referencing the node.js files in S3
 * A Lambda function that interacts with the API Gateway
 * The necessary configurations for the API Gateway
+* the aws_iam_role for Lambda
 
 This module takes these parameters, identified in `lambda.tf`
 * `app_version` - The variable referencing the version of the node.js file desired
