@@ -9,7 +9,7 @@ resource "aws_lambda_function" "example" {
   function_name = "ServerlessExample"
 
   # The bucket name as created earlier with "aws s3api create-bucket"
-  s3_bucket = "terraform-serverless-example-dhcs"
+  s3_bucket = "terraform-serverless-example"
   s3_key    = "v${var.app_version}/example.zip"
 
   # "main" is the filename within the zip file (main.js) and "handler"
